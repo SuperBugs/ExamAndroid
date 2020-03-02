@@ -2,12 +2,12 @@
 # 百跃实验检测
 > 百跃实验检测是一款集学习、练题、模拟考试的学习类安卓APP
 ## 软件截图
-![](./screenshot/s_1.png) 
-![](./screenshot/s_2.png)   
-![](./screenshot/s_3.png)
-![](./screenshot/s_4.png)  
-![](./screenshot/s_5.png)
-![](./screenshot/s_6.png)  
+![](./screenshot/s_1.jpg) 
+![](./screenshot/s_2.jpg)   
+![](./screenshot/s_3.jpg)
+![](./screenshot/s_4.jpg)  
+![](./screenshot/s_5.jpg)
+![](./screenshot/s_6.jpg)  
 
 ## 作者
 
