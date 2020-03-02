@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_blue"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="320"
+            android:background="@drawable/back"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/titles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/main_title_text_size"
+            android:text="试卷详情"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="325" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_shijuan_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:text="2016年监理工程师《建设工程合同管理》真题"
+            android:textColor="@android:color/black"
+            android:textSize="22.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip">
+
+            <Button
+                android:id="@+id/btn_shijuan_exam"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.0"
+                android:padding="3dp"
+                android:text="开始考试"
+                android:background="@drawable/btn_blue_selector_bg"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+
+            <Button
+                android:id="@+id/btn_shijuan_pratice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1.0"
+                android:text="开始练习"
+                android:background="@drawable/btn_blue_selector_bg"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text="已答题数"
+                android:textColor="@android:color/black"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_shijuan_yida"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="15/100"
+                android:textColor="@color/blue"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text="最近得分"
+                android:textColor="@android:color/black"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_shijuan_score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:textColor="@color/blue"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text="试卷分数"
+                android:textColor="@android:color/black"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_shijuan_total_score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="120"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text="及格分数"
+                android:textColor="@android:color/black"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_shijuan_pass_score"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:text="72"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btn_shijuan_clear_exam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15.0dip"
+            android:background="@drawable/btn_red_selector_bg"
+            android:text="清除该试卷[考试]记录"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="19.0sp" />
+
+        <Button
+            android:id="@+id/btn_shijuan_clear_pratice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:background="@drawable/btn_red_selector_bg"
+            android:text="清除该试卷[练习]记录"
+            android:textColor="@color/white"
+            android:textSize="19.0sp" />
+    </LinearLayout>
+</LinearLayout>

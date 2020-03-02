@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ly_bottom">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_practice_subject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:text="题目"
+                android:textColor="@android:color/black"
+                android:textSize="20.0sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_practice_option"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_practice_option_a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="start"
+                    android:paddingTop="2.0dip"
+                    android:text="A."
+                    android:textColor="@android:color/black"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@android:color/darker_gray" />
+
+                <RadioButton
+                    android:id="@+id/rb_practice_option_b"
+                    style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="start"
+                    android:paddingTop="2.0dip"
+                    android:text="B."
+                    android:textColor="@android:color/black"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@android:color/darker_gray" />
+
+                <RadioButton
+                    android:id="@+id/rb_practice_option_c"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="start"
+                    android:paddingTop="2.0dip"
+                    android:text="C."
+                    android:textColor="@android:color/black"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/rb_practice_line_c"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@android:color/darker_gray" />
+
+                <RadioButton
+                    android:id="@+id/rb_practice_option_d"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="start"
+                    android:paddingTop="2.0dip"
+                    android:text="D."
+                    android:textColor="@android:color/black"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/rb_practice_line_d"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@android:color/darker_gray" />
+
+                <RadioButton
+                    android:id="@+id/rb_practice_option_e"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="start"
+                    android:paddingTop="2.0dip"
+                    android:text="E."
+                    android:textColor="@android:color/black"
+                    android:textSize="20.0sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/rb_practice_line_e"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_practice_option_f"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="start"
+                    android:paddingTop="2.0dip"
+                    android:text="F."
+                    android:textColor="@android:color/black"
+                    android:textSize="20.0sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/rb_practice_line_f"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/rl_answer_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_practice_answer_status"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_practice_answer_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_toRightOf="@id/iv_practice_answer_status"
+                    android:padding="0.0dip"
+                    android:text="答错了"
+                    android:textColor="@android:color/black"
+                    android:textSize="22.0sp" />
+
+                <TextView
+                    android:id="@+id/iv_practice_right_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="ABCD"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="22.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_toLeftOf="@id/iv_practice_right_answer"
+                    android:text="参考答案:"
+                    android:textColor="@android:color/black"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_jiexi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20.0dip"
+                android:text="题目解析:"
+                android:textColor="@android:color/black"
+                android:textSize="22.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/iv_practice_answer_analyze"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="\ 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ac_main_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/middle_white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ly_bottom_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_home_bottom_home"
+                android:layout_width="@dimen/ac_main_bottom_btn_w"
+                android:layout_height="@dimen/ac_main_bottom_btn_w"
+                android:layout_margin="1dp"
+                android:background="@drawable/up_subject" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_home"
+                android:layout_width="@dimen/ac_main_bottom_tv_w"
+                android:layout_height="@dimen/ac_main_bottom_tv_h"
+                android:gravity="center_horizontal"
+                android:text="上一题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ac_main_bottom_tv_s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_bottom_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/iv_home_bottom_wrong"
+                android:layout_width="@dimen/ac_main_bottom_btn_w"
+                android:layout_height="29dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/check_answer" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ac_main_bottom_tv_h"
+                android:gravity="center_horizontal"
+                android:text="查看答案"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ac_main_bottom_tv_s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_bottom_collect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_home_bottom_collect"
+                android:layout_width="@dimen/ac_main_bottom_btn_w"
+                android:layout_height="@dimen/ac_main_bottom_btn_w"
+                android:background="@drawable/collect_subject" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ac_main_bottom_tv_h"
+                android:gravity="center_horizontal"
+                android:text="收藏"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ac_main_bottom_tv_s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_bottom_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_shijuan_pratice"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/btn_blue_radio_selector_bg"
+                android:text="交卷"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_bottom_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_home_bottom_book"
+                android:layout_width="@dimen/ac_main_bottom_btn_w"
+                android:layout_height="@dimen/ac_main_bottom_btn_w"
+                android:background="@drawable/next_subject" />
+
+            <TextView
+                android:id="@+id/tv_home_bottom_book"
+                android:layout_width="@dimen/ac_main_bottom_tv_w"
+                android:layout_height="@dimen/ac_main_bottom_tv_h"
+                android:gravity="center_horizontal"
+                android:text="下一题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ac_main_bottom_tv_s" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

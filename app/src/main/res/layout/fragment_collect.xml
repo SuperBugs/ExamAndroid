@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/little_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_collect_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/f_set_right_m"
+        android:layout_marginRight="@dimen/f_set_right_m"
+        android:gravity="center_vertical"
+        android:text="公共基础 已收藏0题"
+        android:textSize="@dimen/f_collect_font_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/little_gray" />
+
+    <TextView
+        android:id="@+id/tv_collect_two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/f_set_right_m"
+        android:layout_marginRight="@dimen/f_set_right_m"
+        android:gravity="center_vertical"
+        android:text="道路工程 已收藏0题"
+        android:textSize="@dimen/f_collect_font_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/little_gray" />
+
+    <TextView
+        android:id="@+id/tv_collect_three"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/f_set_right_m"
+        android:layout_marginRight="@dimen/f_set_right_m"
+        android:gravity="center_vertical"
+        android:text="桥梁隧道工程 已收藏0题"
+        android:textSize="@dimen/f_collect_font_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/little_gray" />
+
+    <TextView
+        android:id="@+id/tv_collect_four"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/f_set_right_m"
+        android:layout_marginRight="@dimen/f_set_right_m"
+        android:gravity="center_vertical"
+        android:text="交通工程 已收藏0题"
+        android:textSize="@dimen/f_collect_font_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/little_gray" />
+</LinearLayout>
